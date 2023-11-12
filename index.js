@@ -13,7 +13,7 @@ app.post('/webhook-endpoint', (req, res) => {
   res.status(200).send('Notificación recibida');
 });
 
-const puerto = process.env.PORT || 22;
+const puerto = process.env.PORT || 3000;
 app.listen(puerto, () => {
   console.log(`Servicio web en ejecución en el puerto ${puerto}`);
 });
