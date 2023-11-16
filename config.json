@@ -1,0 +1,18 @@
+{  
+    "message": "Welcome to GBH WhatApp Ticket System. Bienvenido al sistema de ticket de GBH", 
+    "question": {
+                "message":"What is your language? - ¿Cual es su idioma?",
+                "function": {
+                    "name":"lang",
+                    "parameters"{
+                        "languageName": "es"
+                    }
+                    
+
+                }
+
+
+    }
+
+
+}
