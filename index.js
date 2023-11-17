@@ -4,7 +4,7 @@ const app = express();
 
 const axios = require('axios');
 
-const url = 'http://ec2-18-205-17-196.compute-1.amazonaws.com:3000/comment';
+const url = 'https://comfortable-duck-shift.cyclic.app:3000/comment';
 
 app.use(bodyParser.json());
 
