@@ -17,8 +17,8 @@ app.post('/webhook-endpoint', (req, res) => {
   axios.post(url)
     .then((axiosRes) => {
       // Handle the response data
-      console.log('Response:', axiosRes.data);
-     res.status(200).send('Notificación recibida')
+     console.log('Response:', axiosRes.data);
+     res.status(200).send(axiosRes.data);
     })
     .catch(error => {
       // Handle errors
