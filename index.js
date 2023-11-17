@@ -14,20 +14,19 @@ app.post('/webhook-endpoint', (req, res) => {
 
   console.log(webhookData);
 
-  axios.post(url)
+  axios.post(url, webhookData) // Pass the webhookData in the request
     .then((axiosRes) => {
       // Handle the response data
-     console.log('Response:', axiosRes.data);
-     res.status(200).send(axiosRes.data);
+      console.log('Response:', axiosRes.data);
+      res.status(200).send(axiosRes.data);
     })
     .catch(error => {
       // Handle errors
       console.error('Error:', error.message);
+      res.status(500).send('Internal Server Error');
     });
 
   // Additional actions as needed
-
-  res.status(200).send('Notificación recibida');
 });
 
 const puerto = process.env.PORT || 3000;
